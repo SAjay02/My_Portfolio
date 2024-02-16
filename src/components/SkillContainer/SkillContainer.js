@@ -10,7 +10,7 @@ const SkillContainer = () => {
         <img src={Skilling}/>
         </div>
         <div className="skillContainer__text">
-       <h2>SKILLSET</h2>
+       <h2 >SKILLSET</h2>
         <div className="skillContainer__skillSet">
             <h5>Java</h5>
             <div className="skillContainer__slider skillContainer__slider1">
