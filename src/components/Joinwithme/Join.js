@@ -28,7 +28,7 @@ const Join = () => {
     event.preventDefault();
     console.log(viewer)
     setViewer('');
-
+    toast.success("Mail Sent Successfully");
     const serviceId = 'service_pezcy9z';
     const templateId = 'template_1bevlzm';
     const publicKey = '1UdyIvKr90_b45YSS';
