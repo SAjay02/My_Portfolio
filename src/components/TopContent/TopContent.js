@@ -19,7 +19,7 @@ const TopContent = () => {
       transition:{
         type:"spring",
         bounce:0.5,
-        duration:3
+        duration:2.5
       }
     }
  }
@@ -34,7 +34,7 @@ const TopContent = () => {
     opacity:1,
     transition:{
       type:"spring",
-      duration:3
+      duration:2.5
     }
   }
 }
@@ -49,12 +49,27 @@ const second_cont={
     opacity:1,
     transition:{
       type:"spring",
-      duration:3
+      duration:2.5
     }
   }
 }
 
 const third_cont={
+  offscreen:{
+    x:2000,
+    opacity:0
+  },
+  onscreen:{
+    x:0,
+    opacity:1,
+    transition:{
+      type:"spring",
+      duration:2.5
+    }
+  }
+}
+
+const btn_cont={
   offscreen:{
     x:2000,
     opacity:0
@@ -82,9 +97,15 @@ const third_cont={
             <motion.p variants={third_cont} style={{color:"#f64c08"}}>{name}</motion.p>
             </div>
             <p className="content_me">A highly self-motivated and dependable person who is great at time management. Meanwhile always energetic and eager to learn something a new skills for further projects. I am flexible others during projects and any other works.</p>
-            <a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton">Download CV</button></a>
+            <motion.a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" whileHover={{scale:0.9,transition:{
+                  ease:"backInOut",
+                  duration:2
+                }}}>Download CV</button></motion.a>
             <Link to="projects" smooth={true} duration={500}>
-                <button className="topContent__workButton">My Work</button>
+                <motion.button className="topContent__workButton" whileHover={{scale:0.9,transition:{
+                  ease:"backInOut",
+                  duration:2
+                }}}>My Work</motion.button>
             </Link>
         </div>
         
