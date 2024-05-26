@@ -4,6 +4,7 @@ import pro2 from "../../assets/Project2_Imng.png"
 import Projects from '../Projects/Projects'
 import { Element } from 'react-scroll'
 import "./ProjectContainer.css"
+import {motion} from "framer-motion"
 const ProjectContainer = () => {
     const projects=[
         {
@@ -37,11 +38,11 @@ const ProjectContainer = () => {
             link:"https://github.com/SAjay02/Feedback_Project"
         }
     ]
-    
+  
   return (
           <Element className="projectContainer" id="projects"> 
                 <h1 className=" text-center" style={{color:"#f7c86a"}}>Projects</h1>
-                <p className="project_sec_cont">Here are some projects which I have developed for my passions and other activites for past 8 months.</p>
+                <p className="project_sec_cont">Here are some projects which I have developed for my passions and other activites for past 10 months.</p>
                 <div className="projectContainer__projects">
                 {
                     projects.map((project,index)=>
@@ -54,6 +55,7 @@ const ProjectContainer = () => {
                 }
                 </div>
           </Element>
+         
   )
 }
 

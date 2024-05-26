@@ -1,14 +1,29 @@
 import React from 'react'
 import { Element } from 'react-scroll'
-import {IconButton} from "@material-ui/core"
-import {Facebook, Instagram,LinkedIn} from "@material-ui/icons"
+import {IconButton, duration} from "@material-ui/core"
+import {Facebook, Instagram,LinkedIn, Opacity} from "@material-ui/icons"
 import "./Contact.css"
 import leetcode from "../../assets/leetcode.ico"
 import github from "../../assets/github.ico"
 import linkedin from "../../assets/linkedin.ico"
 import insta from "../../assets/instagram.ico"
+import {motion} from "framer-motion"
+const animate_contact={
+  offscreen:{
+    y:-100
+  },
+  onscreen:{
+    y:0,
+    Opacity:1,
+    transition:{
+      type:"spring",
+      duration:2
+    }
+  }
+}
 const Contact = () => {
   return (
+    <motion.div initial="offscreen" whileInView="onscreen" variants={animate_contact}> 
     <Element className="contact" id="contact">
         <h1>Contact</h1>
         <div className="contact__container">
@@ -23,6 +38,7 @@ const Contact = () => {
             </div>
         </div>
     </Element>
+    </motion.div>
   )
 }
 export default Contact

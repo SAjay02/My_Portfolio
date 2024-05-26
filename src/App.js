@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import TopContainer from "./components/Header/TopContainer/TopContainer";
 import ProjectContainer from "./components/ProjectsContainer/ProjectContainer";
 import SkillContainer from "./components/SkillContainer/SkillContainer";
+import ScrollButton from "./components/ScrollButton";
 function App() {
   return (
     <div>
@@ -11,6 +12,7 @@ function App() {
       <SkillContainer/>
       <ProjectContainer/>
       <Contact/>
+      <ScrollButton/>
     </div>
   );
 }

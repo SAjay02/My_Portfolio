@@ -65,13 +65,24 @@
         display: flex;
         font-size: 5px;
     }
+    /* .topContent__container > a > button
+    {
+        color: white;
+        background-color: #f64c08;
+        font-size: 14px;
+        padding:5px 30px;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        margin-right: 20px;
+    } */
 }
 
 @media (max-Width:420px){
     .img_top_container
     {
         /* margin-top: 50px; */
-        margin-left: 48px;
+        margin-left: 30px;
     }
     .img_container
     {
@@ -98,12 +109,13 @@
         display: flex;
         font-size: 5px;
     }
+  
 }
 
 .topContent__container > p
 {
     letter-spacing: 1px;
-    text-align: left;
+    text-align: justify;
     padding-left: 3px;
     padding-top: 20px;
 }

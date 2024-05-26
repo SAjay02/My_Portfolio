@@ -4,6 +4,7 @@ import "./TopContent.css"
 import Ajay from "../../assets/Ajay_New_Resume.pdf"
 import img from "../../assets/Ajay_Prof.jpg"
 import {motion, spring} from "framer-motion"
+import ScrollButton from '../ScrollButton';
 const TopContent = () => {
   const [typedName, setTypedName] = useState('');
   const name = 'PASSIONATE IN JAVA AND MERN STACK DEVELOPER!';
@@ -97,19 +98,14 @@ const btn_cont={
             <motion.p variants={third_cont} style={{color:"#f64c08"}}>{name}</motion.p>
             </div>
             <p className="content_me">A highly self-motivated and dependable person who is great at time management. Meanwhile always energetic and eager to learn something a new skills for further projects. I am flexible others during projects and any other works.</p>
-            <motion.a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" whileHover={{scale:0.9,transition:{
-                  ease:"backInOut",
-                  duration:2
-                }}}>Download CV</button></motion.a>
+            <motion.a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" >Download CV</button></motion.a>
             <Link to="projects" smooth={true} duration={500}>
-                <motion.button className="topContent__workButton" whileHover={{scale:0.9,transition:{
-                  ease:"backInOut",
-                  duration:2
-                }}}>My Work</motion.button>
+                <button className="topContent__workButton">My Work</button>
             </Link>
         </div>
         
     </motion.div>
+
   )
 }
 export default TopContent
