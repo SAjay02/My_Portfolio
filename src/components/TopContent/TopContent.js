@@ -27,11 +27,11 @@ const TopContent = () => {
 
  const first_cont={
   offscreen:{
-    x:800,
+    y:100,
     opacity:0
   },
   onscreen:{
-    x:0,
+    y:0,
     opacity:1,
     transition:{
       type:"spring",
@@ -42,11 +42,11 @@ const TopContent = () => {
 
 const second_cont={
   offscreen:{
-    x:1400,
+    y:150,
     opacity:0
   },
   onscreen:{
-    x:0,
+    y:0,
     opacity:1,
     transition:{
       type:"spring",
@@ -57,11 +57,11 @@ const second_cont={
 
 const third_cont={
   offscreen:{
-    x:2000,
+    y:180,
     opacity:0
   },
   onscreen:{
-    x:0,
+    y:0,
     opacity:1,
     transition:{
       type:"spring",
@@ -86,25 +86,25 @@ const btn_cont={
 }
   
   return (
-    <motion.div className="topContent" initial="offscreen" whileInView="onscreen">
-        <div className="img_top_container">
+    <div className="topContent" >
+        <motion.div initial="offscreen" whileInView="onscreen" className="img_top_container">
           <motion.img variants={animateImg} src={img} className="img_container"/>
-        </div>
-        <div className="topContent__container">
+        </motion.div>
+        <motion.div className="topContent__container" initial="offscreen" whileInView="onscreen">
             <motion.h1 variants={first_cont}>Hello, I am </motion.h1>
             <motion.h2 variants={second_cont}>Ajay S</motion.h2>
-            <div  className="animate_cont_me">
+            <motion.div  className="animate_cont_me" initial="offscreen" whileInView="onscreen">
             <motion.p variants={third_cont}>I am&nbsp;</motion.p>
             <motion.p variants={third_cont} style={{color:"#f64c08"}}>{name}</motion.p>
-            </div>
+            </motion.div>
             <p className="content_me">A highly self-motivated and dependable person who is great at time management. Meanwhile always energetic and eager to learn something a new skills for further projects. I am flexible others during projects and any other works.</p>
-            <motion.a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" >Download CV</button></motion.a>
+            <a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" >Download CV</button></a>
             <Link to="projects" smooth={true} duration={500}>
                 <button className="topContent__workButton">My Work</button>
             </Link>
-        </div>
+        </motion.div>
         
-    </motion.div>
+    </div>
 
   )
 }

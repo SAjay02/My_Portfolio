@@ -35,83 +35,6 @@
     border-radius: 100%;
     overflow: hidden; 
 }
-@media (max-Width:430px){
-    .img_top_container
-    {
-        /* margin-top: 50px; */
-        margin-left: 75px;
-    }
-    .img_container
-    {
-        height: 350px;
-        width: auto;
-        border-radius: 100%;
-        overflow: hidden; 
-    }
-    .topContent
-    {
-        color: white;
-        display: flex;
-        flex-direction: column;
-    }
-    .topContent__container
-    {
-        margin-top: 70px;
-        /* margin-left: 30px; */
-        width: 390px;
-    }
-    .animate_cont_me
-    {
-        display: flex;
-        font-size: 5px;
-    }
-    /* .topContent__container > a > button
-    {
-        color: white;
-        background-color: #f64c08;
-        font-size: 14px;
-        padding:5px 30px;
-        font-family: "Montserrat",sans-serif;
-        font-weight: 300;
-        cursor: pointer;
-        margin-right: 20px;
-    } */
-}
-
-@media (max-Width:420px){
-    .img_top_container
-    {
-        /* margin-top: 50px; */
-        margin-left: 30px;
-    }
-    .img_container
-    {
-        height: 350px;
-        width: auto;
-        border-radius: 100%;
-        overflow: hidden; 
-    }
-    .topContent
-    {
-        color: white;
-        display: flex;
-        flex-direction: column;
-    }
-    .topContent__container
-    {
-        margin-top: 70px;
-        /* margin-left: 30px; */
-        width: 340px;
-        margin-left: 15px;
-    }
-    .animate_cont_me
-    {
-        display: flex;
-        font-size: 5px;
-    }
-  
-}
-
 .topContent__container > p
 {
     letter-spacing: 1px;
@@ -123,8 +46,6 @@
 .topContent__container > a >button
 {
     margin-top: 30px;
-    text-align: left;
-    margin-left:5px;
     border: none;
     border-radius: 2px;
     outline: none;
@@ -163,6 +84,7 @@
     font-weight: 300;
     font-family: "Montserrat",sans-serif;
     cursor: pointer;
+    /* display: none; */
 }
 
 .topContent__workButton:hover
@@ -172,6 +94,112 @@
     font-weight: 600;
 }
 
+@media (max-Width:430px){
+    .img_top_container
+    {
+        /* margin-top: 50px; */
+        margin-left: 75px;
+    }
+    .img_container
+    {
+        height: 350px;
+        width: auto;
+        border-radius: 100%;
+        overflow: hidden; 
+    }
+    .topContent
+    {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .topContent__container
+    {
+        margin-top: 70px;
+        margin-left: 20px;
+        width: 390px;
+    }
+    .animate_cont_me
+    {
+        display: flex;
+        font-size: 5px;
+    }
+    /* .topContent__container > a > button
+    {
+        color: white;
+        background-color: #f64c08;
+        font-size: 14px;
+        padding:5px 30px;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        margin-right: 20px;
+    } */
+    .topContent__downloadButton
+    {
+        margin-left: 100px;
+    }
+    .topContent__workButton{
+        display: none;
+    }
+}
+@media (max-Width:421px){
+    .img_top_container
+    {
+        /* margin-top: 50px; */
+        margin-left: 60px;
+    }
+    .img_container
+    {
+        height: 350px;
+        width: auto;
+        border-radius: 100%;
+        overflow: hidden; 
+    }
+    .topContent
+    {
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .topContent__container
+    {
+        margin-top: 70px;
+        /* margin-left: 30px; */
+        width: 370px;
+        margin-left: 15px;
+    }
+    .animate_cont_me
+    {
+        display: flex;
+        font-size: 5px;
+    }
+  
+}
+
+@media (max-Width:411px) {
+    .topContent__container
+    {
+        margin-top: 70px;
+        /* margin-left: 30px; */
+        width: 370px;
+        margin-left: 15px;
+    }
+}
+@media (max-Width:395px) {
+    .topContent__container
+    {
+        margin-top: 70px;
+        /* margin-left: 30px; */
+        width: 350px;
+        margin-left: 15px;
+    }
+    .img_top_container
+    {
+        /* margin-top: 50px; */
+        margin-left: 60px;
+    }
+}
 .animate_cont_me
 {
     display: flex;

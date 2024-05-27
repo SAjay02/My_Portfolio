@@ -53,13 +53,13 @@ const SkillContainer = () => {
         <motion.div className="skillContainer__skillSet" variants={animate_progress}>
             <h5>React JS</h5>
             <div className="skillContainer__slider skillContainer__slider2">
-                <LinearProgress variant="determinate" value={40}/>
+                <LinearProgress variant="determinate" value={60}/>
             </div>
         </motion.div>
         <motion.div className="skillContainer__skillSet" variants={animate_progress}>
             <h5>Node JS and Express JS</h5>
             <div className="skillContainer__slider skillContainer__slider3">
-                <LinearProgress variant="determinate" value={25}/>
+                <LinearProgress variant="determinate" value={60}/>
             </div>
         </motion.div>
         <motion.div className="skillContainer__skillSet" variants={animate_progress}>
