@@ -95,10 +95,10 @@ const btn_cont={
             <motion.h2 variants={second_cont}>Ajay S</motion.h2>
             <motion.div  className="animate_cont_me" initial="offscreen" whileInView="onscreen">
             <motion.p variants={third_cont}>I am&nbsp;</motion.p>
-            <motion.p variants={third_cont} style={{color:"#f64c08"}}>{name}</motion.p>
+            <motion.p variants={third_cont}  style={{color:"#f64c08"}}>PASSIONATE IN JAVA AND MERN STACK DEVELOPER!</motion.p>
             </motion.div>
             <p className="content_me">A highly self-motivated and dependable person who is great at time management. Meanwhile always energetic and eager to learn something a new skills for further projects. I am flexible others during projects and any other works.</p>
-            <a href="717821E202_Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" >Download CV</button></a>
+            <a href="717821E202 - Ajay S.pdf" download="Ajay-Resume.pdf"><button className="topContent__downloadButton" >Download CV</button></a>
             <Link to="projects" smooth={true} duration={500}>
                 <button className="topContent__workButton">My Work</button>
             </Link>
