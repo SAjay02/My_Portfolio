@@ -14,21 +14,27 @@ const ProjectContainer = () => {
             link:"https://lappistore.netlify.app/"
         },
         {
+            img:"https://www.mariokandut.com/static/a37a4931f2b57fcfef60398a1476456e/f2fb1/react-logo.webp",
+            title:"BIKE SERVICE",
+            desc:" This project was used for customers who wanted to have their bikes serviced or repaired. And all user details that can be booked could be tracked by admin.",
+            link:"https://hogservice.vercel.app"
+        },
+        {
             img:pro1,
             title:"MEDICAL BILLING SYSTEM",
-            desc:"Handling all details about the whole product of the medicines. Build for admin side purpose with an authentications. It also make a Bill receipt for the customers.",
+            desc:" Handling all details about the whole product of the medicines. Build for admin side purpose with an authentications. It also make a Bill receipt for the customers.",
             link:"https://bitfusion-715cb.web.app"
         },
         {
             img:pro1,
             title:"SMART GARBAGE DISPOSAL",
-            desc:"Detect the level of the garbage container by using the sensor. It will displaythe levels in the maps at accurate location with different indications. Also have the authentications with consent admin and to enroute with shortest distance",
+            desc:" Detect the level of the garbage container by using the sensor. It will displaythe levels in the maps at accurate location with different indications. Also have the authentications with consent admin and to enroute with shortest distance",
             link:"https://bitfusion-715cb.web.app"
         },
         {
             img:pro2,
             title:"FOOD-ORDER APPLICATION",
-            desc:"It is user-friendly with customer to order the foods and making an payment with the authentications.",
+            desc:" It is user-friendly with customer to order the foods and making an payment with the authentications.",
             link:"https://github.com/SAjay02/Food_Order_Project"
         },
         {

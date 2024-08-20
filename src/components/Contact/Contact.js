@@ -7,7 +7,7 @@ import leetcode from "../../assets/leetcode.ico"
 import github from "../../assets/github.ico"
 import linkedin from "../../assets/linkedin.ico"
 import insta from "../../assets/instagram.ico"
-import {motion} from "framer-motion"
+import {delay, motion} from "framer-motion"
 const animate_contact={
   offscreen:{
     y:-100
